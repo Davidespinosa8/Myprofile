@@ -1,7 +1,7 @@
 "use client"
 import { fadeIn } from "@/utils/motionTransitions";
 import { AvatarWorks } from "../AvatarWorks/AvatarWorks";
-import { Circle } from "../Circle";
+import { Circle } from "../Worky";
 import { motion } from 'framer-motion'
 import { Slider } from "./Slider";
 

@@ -1,10 +1,11 @@
 "use client"
 import { fadeIn } from "@/utils/motionTransitions"
 import { AvatarWorks } from "../AvatarWorks/AvatarWorks"
-import { Circle } from "../Circle"
+import { Worky } from "../Worky"
 import { motion } from 'framer-motion'
 import { cardContent } from "./Work.data"
 import { useState } from "react"
+import Link from "next/link"
 
 export function Work() {
     const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
@@ -27,7 +28,7 @@ export function Work() {
     return (
         <div className="h-screen">
             <AvatarWorks />
-            <Circle />
+            <Worky />
             <div className="grid pb-32 md:min-h-screen mt-28 md:mt-0 place-items-center">
                 <div>
                     <motion.h1
@@ -36,7 +37,7 @@ export function Work() {
                         animate="show"
                         exit="hidden"
                         className="my-5 text-2xl text-center md:text-4-xl"
-                    >Mis últimos  <span className="text-secondary">trabajos realizados.</span>
+                    >Mis últimos  <span className="text-lime-400">trabajos realizados.</span>
                     </motion.h1>
                     <motion.div
                         className="flex flex-col items-center h-full gap-5 px-2 md:flex-row"
@@ -45,9 +46,9 @@ export function Work() {
                         animate="show"
                         exit="hidden"
                     >
-                        {cardContent.map(({ id, title, imageUrl, description, skills }) => (
+                        {cardContent.map(({ id, title, imageUrl, link, description, skills }) => (
                             <motion.div key={id}
-                                className={`card cursor-pointer h-[400px] bg-auto bg-no-repeat bg-center rounded-[20px] ${id === expandedIndex && 'expanded'}`}
+                                className={`card cursor-pointer h-[400px] bg-cover bg-no-repeat bg-center rounded-[20px] ${id === expandedIndex && 'expanded'}`}
                                 initial={{ opacity: 1 }}
                                 variants={cardVariants}
                                 animate={id === expandedIndex ? 'expanded' : 'collapsed'}
@@ -71,6 +72,10 @@ export function Work() {
                                                         <p key={index}>{data.icon}</p>
                                                     ))}
                                                 </div>
+                                                {/* Enlace para abrir en nueva pestaña */}
+                                                <Link href={link} target="_blank" rel="noopener noreferrer">
+                                                    Abrir
+                                                </Link>
                                             </>
                                         )}
                                     </div>

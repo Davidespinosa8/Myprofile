@@ -18,6 +18,6 @@ export const testimonialsData = [
     name: "Julián Espinosa",
     testimonial:
       "Mi idea era aumentar mis seguidores y conseguir potenciales clientes, ambas metas cumplidas. ~Dueño de J-Barber~",
-    image: "Julipi.png",
+    image: "julipi.png",
   },
 ];

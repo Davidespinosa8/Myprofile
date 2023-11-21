@@ -1,4 +1,4 @@
-import { SiTailwindcss, SiGithub, SiReact, SiNextdotjs, SiTestinglibrary } from "react-icons/si";
+import { SiTailwindcss, SiGithub, SiReact, SiNextdotjs } from "react-icons/si";
 
 export const cardContent = [
   {
@@ -6,7 +6,8 @@ export const cardContent = [
     title: "Calculator",
     description:
       "Calculator project made by React and Tailwind CSS. ",
-    imageUrl: "/work-1.jpeg",
+    imageUrl: "/work-1.png",
+    link: "",
     skills: [
       {
         icon: <SiReact size="40" />
@@ -14,17 +15,15 @@ export const cardContent = [
       {
         icon: <SiTailwindcss size="40" />
       },
-      {
-        icon: <SiTestinglibrary size="40" />
-      },
     ]
   },
   {
     id: 1,
-    title: "Portfolio React",
+    title: "Landing Bank",
     description:
-      "This is a description2, sjdnfsdf idfs sdhfbsdf jds fjsd gf sjdgns",
-    imageUrl: "/work-2.jpeg",
+      "Simulacion de Landing para un banco",
+    imageUrl: "/work-2.png",
+    link:"https://landing-bank-six.vercel.app/",
     skills: [
       {
         icon: <SiNextdotjs size="40" />
@@ -41,8 +40,9 @@ export const cardContent = [
     id: 2,
     title: "Strapi",
     description:
-      "This is a description, sjdnfsdf idfs sdhfbsdf jds fjsd gf sjdgns",
+      "En proceso",
     imageUrl: "/work-3.jpeg",
+    link:"",
     skills: [
       {
         icon: <SiNextdotjs size="40" />
@@ -57,10 +57,11 @@ export const cardContent = [
   },
   {
     id: 3,
-    title: "Prestashop",
+    title: "Inmobiliaria",
     description:
-      "This is a description, sjdnfsdf idfs sdhfbsdf jds fjsd gf sjdgns",
+      "En proceso",
     imageUrl: "/work-4.jpeg",
+    link:"",
     skills: [
       {
         icon: <SiNextdotjs size="40" />
@@ -77,8 +78,9 @@ export const cardContent = [
     id: 4,
     title: "E-Commerce React",
     description:
-      "This is a description, sjdnfsdf idfs sdhfbsdf jds fjsd gf sjdgns",
+      "En proceso...",
     imageUrl: "/work-5.jpeg",
+    link:"",
     skills: [
       {
         icon: <SiNextdotjs size="40" />
