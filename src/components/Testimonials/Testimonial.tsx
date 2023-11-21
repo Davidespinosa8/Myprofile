@@ -1,7 +1,7 @@
 "use client"
 import { motion } from 'framer-motion'
 import { AvatarWorks } from '../AvatarWorks/AvatarWorks'
-import { Circle } from '../Worky'
+import { Worky } from '../Worky'
 import { fadeIn } from '@/utils/motionTransitions'
 import { TestimonialSlider } from './TestimonialSlider'
 
@@ -9,7 +9,7 @@ export function Testimonial() {
     return (
         <div className='h-screen'>
             <AvatarWorks />
-            <Circle />
+            <Worky />
             <div className="flex flex-col justify-center min-h-screen">
                 <motion.h1
                     variants={fadeIn('up', 0.5)}
