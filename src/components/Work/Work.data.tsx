@@ -1,4 +1,4 @@
-import { SiTailwindcss, SiGithub, SiReact, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiGithub, SiReact, SiNextdotjs, SiTypescript } from "react-icons/si";
 
 export const cardContent = [
   {
@@ -57,11 +57,11 @@ export const cardContent = [
   },
   {
     id: 3,
-    title: "Inmobiliaria",
+    title: "Construccion Drycraft",
     description:
       "En proceso",
-    imageUrl: "/work-4.jpeg",
-    link:"",
+    imageUrl: "/work-drycraft.png",
+    link:"https://drycraft-lis.vercel.app/",
     skills: [
       {
         icon: <SiNextdotjs size="40" />
@@ -71,6 +71,9 @@ export const cardContent = [
       },
       {
         icon: <SiGithub size="40" />
+      },
+      {
+        icon: <SiTypescript size="40" />
       },
     ]
   },
