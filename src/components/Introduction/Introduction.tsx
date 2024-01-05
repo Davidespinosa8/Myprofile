@@ -28,7 +28,7 @@ export function Introduction() {
                         </p>
 
                         <div className="flex flex-col items-center gap-3 md:gap-10 md:flex-row">
-                            <a href="https://github.com/Davidespinosa8" target="_blank" className="px-6 py-3 my-2 transition-all border-2 cursor-pointer w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
+                            <a href="/src/components/Work" target="_blank" className="px-6 py-3 my-2 transition-all border-2 cursor-pointer w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
                                 Mis proyectos
                             </a>
                             <a href="mailto:ddavidespinosa8@gmail.com" target="_blank" className="px-6 py-3 my-2 transition-all border-2 cursor-pointer text-lime-400 border-lime-400 rounded-xl hover:shadow-xl hover:shadow-lime-400">

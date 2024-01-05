@@ -1,19 +1,22 @@
-import { SiTailwindcss, SiGithub, SiReact, SiNextdotjs, SiTypescript } from "react-icons/si";
+import { SiTailwindcss, SiGithub, SiNextdotjs, SiTypescript, SiBootstrap, SiCss3, SiJavascript } from "react-icons/si";
 
 export const cardContent = [
   {
     id: 0,
-    title: "Calculator",
+    title: "Menú Labirreria",
     description:
-      "Calculator project made by React and Tailwind CSS. ",
-    imageUrl: "/work-1.png",
-    link: "",
+      "Menú Modal project made by HTTP, CSS and Bootstrap 5. ",
+    imageUrl: "/Work-menu.png",
+    link: " https://main--majestic-fox-44c86d.netlify.app/",
     skills: [
       {
-        icon: <SiReact size="40" />
+        icon: <SiJavascript size="40" />
       },
       {
-        icon: <SiTailwindcss size="40" />
+        icon: <SiCss3 size="40" />
+      },
+      {
+        icon: <SiBootstrap size="40" />
       },
     ]
   },
@@ -38,20 +41,20 @@ export const cardContent = [
   },
   {
     id: 2,
-    title: "Strapi",
+    title: "Dining Page",
     description:
       "En proceso",
-    imageUrl: "/work-3.jpeg",
-    link:"",
+    imageUrl: "/Work-menu.png",
+    link:"https://davidespinosa8.github.io/Menu-Birre/",
     skills: [
       {
-        icon: <SiNextdotjs size="40" />
+        icon: <SiCss3 size="40" />
       },
       {
-        icon: <SiTailwindcss size="40" />
+        icon: <SiBootstrap size="40" />
       },
       {
-        icon: <SiGithub size="40" />
+        icon: <SiJavascript size="40" />
       },
     ]
   },
