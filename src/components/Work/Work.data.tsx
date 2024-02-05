@@ -86,7 +86,7 @@ export const cardContent = [
     description:
       "Menú digital",
     imageUrl: "/city.jpeg",
-    link:"",
+    link:"https://cityrock.netlify.app/",
     skills: [
       {
         icon: <SiCss3 size="40" />
