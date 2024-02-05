@@ -82,20 +82,20 @@ export const cardContent = [
   },
   {
     id: 4,
-    title: "E-Commerce React",
+    title: "Cityrock - Menú",
     description:
-      "En proceso...",
-    imageUrl: "/work-5.jpeg",
+      "Menú digital",
+    imageUrl: "/city.jpeg",
     link:"",
     skills: [
       {
-        icon: <SiNextdotjs size="40" />
+        icon: <SiCss3 size="40" />
       },
       {
-        icon: <SiTailwindcss size="40" />
+        icon: <SiBootstrap size="40" />
       },
       {
-        icon: <SiGithub size="40" />
+        icon: <SiJavascript size="40" />
       },
     ]
   },
