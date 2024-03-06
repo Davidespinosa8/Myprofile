@@ -1,4 +1,4 @@
-import { SiTailwindcss, SiGithub, SiNextdotjs, SiTypescript, SiBootstrap, SiCss3, SiJavascript } from "react-icons/si";
+import { SiTailwindcss, SiGithub, SiNextdotjs, SiTypescript, SiBootstrap, SiCss3, SiJavascript, SiHtml5, SiReact, SiGoogle } from "react-icons/si";
 
 export const cardContent = [
   {
@@ -9,14 +9,15 @@ export const cardContent = [
     imageUrl: "/Work-menu.png",
     link: " https://main--majestic-fox-44c86d.netlify.app/",
     skills: [
+      
       {
-        icon: <SiJavascript size="40" />
+        icon: <SiCss3 size="30" />
       },
       {
-        icon: <SiCss3 size="40" />
+        icon: <SiBootstrap size="30" />
       },
       {
-        icon: <SiBootstrap size="40" />
+        icon: <SiJavascript size="30" />
       },
     ]
   },

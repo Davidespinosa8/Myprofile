@@ -1,8 +1,9 @@
 "use client"
+
 import { motionTransitionsAbout } from "@/utils/motionTransitions";
 import { Avatar } from "../Avatar";
 import { motion } from 'framer-motion'
-import { dataAboutSkills, dataCounter } from "./About.data";
+import { dataAboutSkills, dataaboutSkills1, dataCounter } from "./About.data";
 import CountUp from "react-countup";
 import { useState } from "react";
 import { BiDownArrow, BiLeftArrow } from "react-icons/bi";
@@ -20,7 +21,7 @@ export function About() {
                 transition={motionTransitionsAbout.transition}
             >
                 <h1 className="mb-6 md:text-4xl">Creando webs con <br /> <span className="text-lime-400">diseños únicos</span></h1>
-                <p>Diseñamos sitios web que impactan. Cada proyecto es una obra de arte digital, combinando creatividad y tecnología. Destaca en línea con nuestra experiencia en desarrollo web. ¿Listo para impresionar? </p>
+                <p>Diseño y desarrollo sitios web que impactan. Cada proyecto es una obra de arte digital, combinando creatividad y tecnología. Destaca en línea con nuestra experiencia en desarrollo web. ¿Listo para impresionar? </p>
 
                 <div className="grid justify-between grid-cols-2 gap-3 my-8 md:flex md:grid-cols-4 md:gap-6">
                     {dataCounter.map(({ id, endCounter, text, lineRight, lineRightMobile }) => (
@@ -42,9 +43,10 @@ export function About() {
                         const { id, text } = dataText;
 
                         return (
-                            <div key={id}
+                            <div
+                                key={id}
                                 className={`${index === id ? 'text-lime-400 duration-300 transition-all border-lime-400' : 'border-white'} 
-                                        cursor-pointer md:text-lg relative px-2 md:px-8 py-4 border-2 rounded-xl flex justify-between items-center my-3`}
+                                    cursor-pointer md:text-lg relative px-2 md:px-8 py-4 border-2 rounded-xl flex justify-between items-center my-3`}
                                 onClick={() => setIndex(itemIndex)}
                             >
                                 <p className="mr-4 text-md md:text-lg">{text}</p>
@@ -54,17 +56,43 @@ export function About() {
                                     <BiLeftArrow />
                                 )}
                             </div>
-                        )
+                        );
                     })}
+
+                    <div className="cursor-pointer md:text-lg relative px-2 md:px-8 py-4 border-2 rounded-xl flex justify-between items-center my-3"
+                        onClick={() => setIndex(dataAboutSkills.length)}
+                    >
+                        <p className="mr-4 text-md md:text-lg">{dataaboutSkills1[0].text}</p>
+                        {index === dataAboutSkills.length ? (
+                            <BiDownArrow />
+                        ) : (
+                            <BiLeftArrow />
+                        )}
+                    </div>
                 </div>
+
                 <div className="max-w-4xl p-4 mx-auto bg-lime-400/20 rounded-xl">
-                    {dataAboutSkills[index].skills.map((items, index) => (
-                        <div key={index} className="flex justify-center max-w-md gap-4 mx-auto">
-                            <span>{items.title} {" "} </span> - <span>{items.date}</span>
+                    {index !== dataAboutSkills.length && (
+                        <div>
+                            {dataAboutSkills[index].skills.map((items, idx) => (
+                                <div key={idx} className="flex justify-center max-w-md gap-4 mx-auto">
+                                    <span>{items.title} {" "} </span> - <span>{items.date}</span>
+                                </div>
+                            ))}
                         </div>
-                    ))}
+                    )}
+                    {index === dataAboutSkills.length && (
+                        <div>
+                            <div className="flex justify-center max-w-md gap-4 mx-auto">
+                                {dataaboutSkills1[0].skills.map((items, idx) => (
+                                    <span key={idx} className="mr-2 hover:underline">{items.icon}</span>
+                                ))}
+                            </div>
+                        </div>
+                    )}
                 </div>
             </motion.div>
         </div>
     )
 }
+

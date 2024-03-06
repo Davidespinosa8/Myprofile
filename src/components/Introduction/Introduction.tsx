@@ -24,7 +24,7 @@ export function Introduction() {
                         <h1 className="mb-5 text-4xl leading-tight md:mb-10">Si puedes pensarlo,  <br />
                             <span className="text-lime-400">puedes programarlo</span></h1>
                         <p className="max-w-sm  mb-10 text-xl md:max-w-2xl md:mx-0 md:mb-16 md:text-xl">
-                            Mi nombre es David Espinosa soy Desarrollador frontend, tengo 34 años y soy de Argentina
+                            Mi nombre es David Espinosa soy Desarrollador frontend, tengo 35 años y soy de Argentina
                         </p>
 
                         <div className="flex flex-col items-center gap-3 md:gap-10 md:flex-row">
