@@ -21,9 +21,9 @@ export function Introduction() {
                         animate="show"
                         exit="hidden"
                     >
-                        <h1 className="mb-5 text-4xl leading-tight md:mb-10">Si puedes pensarlo,  <br />
+                        <h1 className="mb-5 text-3xl leading-tight md:mb-20">Si puedes pensarlo,  <br />
                             <span className="text-lime-400">puedes programarlo</span></h1>
-                        <p className="max-w-sm  mb-10 text-xl md:max-w-2xl md:mx-0 md:mb-16 md:text-xl">
+                        <p className="max-w-sm  mb-10 text-xl md:max-w-l md:mx-0 md:mb-16 md:text-xl">
                             Mi nombre es David Espinosa soy Desarrollador frontend, tengo 35 años y soy de Argentina
                         </p>
 

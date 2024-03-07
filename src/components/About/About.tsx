@@ -20,7 +20,7 @@ export function About() {
                 animate={motionTransitionsAbout.animate}
                 transition={motionTransitionsAbout.transition}
             >
-                <h1 className="mb-6 md:text-4xl">Creando webs con <br /> <span className="text-lime-400">diseños únicos</span></h1>
+                <h1 className="mb-6 md:text-4xl lg:text-5xl">Creando webs con <br /> <span className="text-lime-400">diseños únicos</span></h1>
                 <p>Diseño y desarrollo sitios web que impactan. Cada proyecto es una obra de arte digital, combinando creatividad y tecnología. Destaca en línea con nuestra experiencia en desarrollo web. ¿Listo para impresionar? </p>
 
                 <div className="grid justify-between grid-cols-2 gap-3 my-8 md:flex md:grid-cols-4 md:gap-6">
@@ -82,10 +82,12 @@ export function About() {
                         </div>
                     )}
                     {index === dataAboutSkills.length && (
-                        <div>
-                            <div className="flex justify-center max-w-md gap-4 mx-auto">
+                        <div className="max-w-md mx-auto">
+                            <div className="flex flex-wrap justify-center gap-4">
                                 {dataaboutSkills1[0].skills.map((items, idx) => (
-                                    <span key={idx} className="mr-2 hover:underline">{items.icon}</span>
+                                    <span key={idx} className="mr-2 mb-2 hover:underline">
+                                        {items.icon}
+                                    </span>
                                 ))}
                             </div>
                         </div>
