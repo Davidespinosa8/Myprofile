@@ -1,4 +1,4 @@
-import { SiTailwindcss, SiGithub, SiNextdotjs, SiTypescript, SiBootstrap, SiCss3, SiJavascript, SiHtml5, SiReact, SiGoogle } from "react-icons/si";
+import { SiTailwindcss, SiGithub, SiNextdotjs, SiTypescript, SiBootstrap, SiCss3, SiJavascript, SiHtml5, SiReact, SiGoogle, SiFramer } from "react-icons/si";
 
 export const cardContent = [
   {
@@ -42,20 +42,20 @@ export const cardContent = [
   },
   {
     id: 2,
-    title: "Dining Page",
+    title: "J-Barber",
     description:
-      "En proceso",
-    imageUrl: "/Work-menu.png",
-    link:"https://davidespinosa8.github.io/Menu-Birre/",
+      "Barbería",
+    imageUrl: "/Jbarber.png",
+    link:"https://j-barber.vercel.app/",
     skills: [
       {
-        icon: <SiCss3 size="40" />
+        icon: <SiNextdotjs size="40" />
       },
       {
-        icon: <SiBootstrap size="40" />
+        icon: <SiTailwindcss size="40" />
       },
       {
-        icon: <SiJavascript size="40" />
+        icon: <SiFramer size="40" />
       },
     ]
   },
