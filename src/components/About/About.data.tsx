@@ -1,4 +1,4 @@
-import { SiJavascript, SiBootstrap, SiCss3, SiHtml5, SiReact, SiNextdotjs, SiTailwindcss, SiGit, SiMysql, SiTypescript, SiFirebase, SiGoogle, SiJira, SiTrello, SiMeta, SiCanva, SiNodedotjs } from "react-icons/si";
+import { SiJavascript, SiBootstrap, SiCss3, SiHtml5, SiReact, SiNextdotjs, SiTailwindcss, SiGit, SiMysql, SiTypescript, SiFirebase, SiGoogle, SiJira, SiTrello, SiMeta, SiCanva, SiNodedotjs, SiFramer } from "react-icons/si";
 
 export const dataCounter = [
   {
@@ -109,7 +109,7 @@ export const dataaboutSkills1 = [
         icon: <SiMeta size="25" />
       },
       {
-        icon: <SiNodedotjs size="25" />
+        icon: <SiFramer size="25" />
       }
     ]
   }]

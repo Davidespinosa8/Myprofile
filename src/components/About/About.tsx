@@ -85,7 +85,7 @@ export function About() {
                         <div className="max-w-md mx-auto">
                             <div className="flex flex-wrap justify-center gap-4">
                                 {dataaboutSkills1[0].skills.map((items, idx) => (
-                                    <span key={idx} className="mr-2 mb-2 hover:underline">
+                                    <span key={idx} className="mr-2 mb-2">
                                         {items.icon}
                                     </span>
                                 ))}

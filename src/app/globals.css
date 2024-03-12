@@ -33,3 +33,8 @@ body {
   .swiper-pagination-bullet {
   background-color: #84CC16;
 }
+
+@font-face {
+  font-family: "Changa";
+  src: url(/assets/fonts/Changa-VariableFont_wght.ttf);
+}

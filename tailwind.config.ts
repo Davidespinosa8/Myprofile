@@ -18,6 +18,9 @@ const config: Config = {
       // animation: {
       //   "bounce-slow": "bounce 3s infinite ",
       // },
+      fontFamily:{
+        Changa: "Changa",
+      }
     },
   },
   plugins: [],
