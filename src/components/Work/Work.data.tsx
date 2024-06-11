@@ -1,23 +1,25 @@
-import { SiTailwindcss, SiGithub, SiNextdotjs, SiTypescript, SiBootstrap, SiCss3, SiJavascript, SiHtml5, SiReact, SiGoogle, SiFramer } from "react-icons/si";
+import { SiTailwindcss, SiGithub, SiNextdotjs, SiTypescript, SiBootstrap, SiCss3, SiJavascript, SiFramer } from "react-icons/si";
 
 export const cardContent = [
   {
-    id: 0,
-    title: "Menú Labirreria",
+    id: 3,
+    title: "Hinchada Vibra",
     description:
-      "Menú Modal project made by HTTP, CSS and Bootstrap 5. ",
-    imageUrl: "/Work-menu.png",
-    link: " https://main--majestic-fox-44c86d.netlify.app/",
+      "Trabajo realizado para la familia de Vibra. En el proyecto se tomaron en cuenta las actualizaciones de next, ademas de rediseñar logos de sponsor y el uso de metodos manuales para la galeria de imagenes. Se mantiene en atualizacion constante",
+    imageUrl: "/proyects/LogoHdV.png",
+    link:"https://www.hinchadavibra.com.ar",
     skills: [
-      
       {
-        icon: <SiCss3 size="30" />
+        icon: <SiNextdotjs size="40" />
       },
       {
-        icon: <SiBootstrap size="30" />
+        icon: <SiTailwindcss size="40" />
       },
       {
-        icon: <SiJavascript size="30" />
+        icon: <SiTypescript size="40" />
+      },
+      {
+        icon: <SiFramer size="40" />
       },
     ]
   },
@@ -60,24 +62,22 @@ export const cardContent = [
     ]
   },
   {
-    id: 3,
-    title: "Construccion Drycraft",
+    id: 0,
+    title: "Menú Labirreria",
     description:
-      "En proceso",
-    imageUrl: "/work-drycraft.png",
-    link:"https://drycraft-lis.vercel.app/",
+      "Menú Modal project made by HTTP, CSS and Bootstrap 5. ",
+    imageUrl: "/Work-menu.png",
+    link: " https://main--majestic-fox-44c86d.netlify.app/",
     skills: [
+      
       {
-        icon: <SiNextdotjs size="40" />
+        icon: <SiCss3 size="30" />
       },
       {
-        icon: <SiTailwindcss size="40" />
+        icon: <SiBootstrap size="30" />
       },
       {
-        icon: <SiGithub size="40" />
-      },
-      {
-        icon: <SiTypescript size="40" />
+        icon: <SiJavascript size="30" />
       },
     ]
   },
@@ -100,4 +100,27 @@ export const cardContent = [
       },
     ]
   },
+  {
+    id: 5,
+    title: "Construccion Drycraft",
+    description:
+      "En proceso",
+    imageUrl: "/work-drycraft.png",
+    link:"https://drycraft-lis.vercel.app/",
+    skills: [
+      {
+        icon: <SiNextdotjs size="40" />
+      },
+      {
+        icon: <SiTailwindcss size="40" />
+      },
+      {
+        icon: <SiGithub size="40" />
+      },
+      {
+        icon: <SiTypescript size="40" />
+      },
+    ]
+  },
+  
 ];
