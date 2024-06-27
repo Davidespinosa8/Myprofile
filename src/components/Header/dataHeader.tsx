@@ -16,6 +16,6 @@ export const socialNetworks = [
   },
     {
     logo: <SiCanva size="40"/>,
-    src: "https://davidespinosa8.my.canva.site/cv-david-espinosa",
+    src: "https://ddavidespinosa8.my.canva.site/",
   },
 ];
