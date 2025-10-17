@@ -20,4 +20,11 @@ export const testimonialsData = [
       "Mi idea era aumentar mis seguidores y conseguir potenciales clientes, ambas metas cumplidas. ~Dueño de J-Barber~",
     image: "julipi.png",
   },
+  {
+    id: 3,
+    name: "Wakaxrayitos",
+    testimonial:
+      "Consegui cambiar mi marca, desde rayitos a Waka Mole Actualmente sigo trabajando desde Tienda nube y hoy con mi local con la generación de contenido y ventas",
+    image: "Rayitosycolores.png",
+  },
 ];

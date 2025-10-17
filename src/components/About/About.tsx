@@ -21,7 +21,7 @@ export function About() {
                 transition={motionTransitionsAbout.transition}
             >
                 <h1 className="mb-6 md:text-4xl lg:text-5xl">Creando webs con <br /> <span className="text-lime-400">diseños únicos</span></h1>
-                <p>Diseño y desarrollo sitios web que impactan. Cada proyecto es una obra de arte digital, combinando creatividad y tecnología. Destaca en línea con nuestra experiencia en desarrollo web. ¿Listo para impresionar? </p>
+                <p>Actualmente integro desarrollo, marketing y contenido para potenciar marcas y proyectos digitales. Desde la creación de sitios web con tecnologías modernas hasta la producción de videos y estrategias de comunicación, mi trabajo une la <strong>programación, la gestión y la creatividad</strong> en un mismo enfoque. Cada proyecto es una experiencia completa: diseño, desarrollo y estrategia, todo en uno.</p>
 
                 <div className="grid justify-between grid-cols-2 gap-3 my-8 md:flex md:grid-cols-4 md:gap-6">
                     {dataCounter.map(({ id, endCounter, text, lineRight, lineRightMobile }) => (
