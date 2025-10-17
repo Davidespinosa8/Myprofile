@@ -7,7 +7,7 @@ export const cardContent = [
     description:
       "Trabajo realizado para la familia de Vibra. En el proyecto se tomaron en cuenta las actualizaciones de next, ademas de rediseñar logos de sponsor y el uso de metodos manuales para la galeria de imagenes. Se mantiene en atualizacion constante",
     imageUrl: "/proyects/LogoHdV.png",
-    link:"https://www.hinchadavibra.com.ar",
+    link:"https://hinchadavibraoficial.vercel.app/",
     skills: [
       {
         icon: <SiNextdotjs size="40" />

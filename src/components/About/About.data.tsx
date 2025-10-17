@@ -3,31 +3,24 @@ import { SiJavascript, SiBootstrap, SiCss3, SiHtml5, SiReact, SiNextdotjs, SiTai
 export const dataCounter = [
   {
     id: 0,
-    endCounter: 2,
+    endCounter: 3,
     text: "Años de experiencia",
     lineRight: true,
     lineRightMobile: true,
   },
   {
     id: 1,
-    endCounter: 4,
+    endCounter: 14,
     text: "Clientes satisfechos",
     lineRight: true,
     lineRightMobile: false,
   },
   {
     id: 2,
-    endCounter: 7,
+    endCounter: 14,
     text: "Proyectos finalizados",
     lineRight: true,
     lineRightMobile: true,
-  },
-  {
-    id: 3,
-    endCounter: 1,
-    text: "Premios ganadores",
-    lineRight: false,
-    lineRightMobile: false,
   },
 ];
 
@@ -42,7 +35,11 @@ export const dataAboutSkills = [
       },
       {
         title: "Legión - Front end",
-        date: "2023/2024",
+        date: "2023/2025",
+      },
+      {
+        title: "Digital Project Manager",
+        date: "2024/2025",
       },
     ],
   },
@@ -53,6 +50,14 @@ export const dataAboutSkills = [
       {
         title: "Desarrollador Full stack - JAVA",
         date: "2022",
+      },
+      {
+        title: "Desarrollador Front end - React js",
+        date: "2023",
+      },
+      {
+        title: "Project Manager - Digital",
+        date: "2023",
       },
     ],
   },
