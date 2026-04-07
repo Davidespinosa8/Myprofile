@@ -7,6 +7,7 @@ import { dataAboutSkills, dataaboutSkills1, dataCounter } from "./About.data";
 import CountUp from "react-countup";
 import { useState } from "react";
 import { BiDownArrow, BiLeftArrow } from "react-icons/bi";
+import type { Transition } from "framer-motion";
 
 export function About() {
     const [index, setIndex] = useState(0)
@@ -18,7 +19,7 @@ export function About() {
             <motion.div
                 initial={motionTransitionsAbout.initial}
                 animate={motionTransitionsAbout.animate}
-                transition={motionTransitionsAbout.transition}
+                transition={motionTransitionsAbout.transition as Transition}
             >
                 <h1 className="mb-6 md:text-4xl lg:text-5xl">Creando webs con <br /> <span className="text-lime-400">diseños únicos</span></h1>
                 <p>Actualmente integro desarrollo, marketing y contenido para potenciar marcas y proyectos digitales. Desde la creación de sitios web con tecnologías modernas hasta la producción de videos y estrategias de comunicación, mi trabajo une la <strong>programación, la gestión y la creatividad</strong> en un mismo enfoque. Cada proyecto es una experiencia completa: diseño, desarrollo y estrategia, todo en uno.</p>

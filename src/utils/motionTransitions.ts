@@ -1,3 +1,5 @@
+import type { Transition } from "framer-motion";
+
 export const transitionVariantsPage = {
   initial: {
     x: "100%",
@@ -23,7 +25,7 @@ export const motionTransitionsAbout = {
     duration: 2.3,
     type: "tween",
     ease: [0.25, 0.6, 0.3, 0.8],
-  },
+  } satisfies Transition,
   animate: {
     opacity: 1,
     transform: "translateY(0px)",
@@ -39,9 +41,9 @@ export const fadeIn = (direction: string, delay: number) => {
       transition: {
         type: "tween",
         duration: 1.5,
-        delay: delay,
+        delay,
         ease: [0.25, 0.6, 0.3, 0.8],
-      },
+      } satisfies Transition,
     },
     show: {
       y: 0,
@@ -50,9 +52,9 @@ export const fadeIn = (direction: string, delay: number) => {
       transition: {
         type: "tween",
         duration: 1.4,
-        delay: delay,
+        delay,
         ease: [0.25, 0.25, 0.25, 0.75],
-      },
+      } satisfies Transition,
     },
   };
 };
