@@ -36,7 +36,7 @@ export function Work() {
             >
               <div
                 className={`relative flex h-52 items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat ${!imageUrl ? "bg-gradient-to-br from-lime-500/20 via-[#343059] to-[#141627]" : ""}`}
-                style={imageUrl ? { backgroundImage: `url(/assets/${imageUrl.replace(/^\\//, "")})` } : undefined}
+                style={imageUrl ? { backgroundImage: `url(/assets/${imageUrl.startsWith("/") ? imageUrl.slice(1) : imageUrl})` } : undefined}
                 role="img"
                 aria-label={`Vista previa de ${title}`}
               >
