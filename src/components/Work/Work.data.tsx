@@ -2,8 +2,35 @@ import { SiTailwindcss, SiGithub, SiNextdotjs, SiTypescript, SiBootstrap, SiCss3
 
 export const cardContent = [
   {
+    id: 7,
+    title: "Top Cinema",
+    description: "Experiencia web audiovisual desarrollada con Next.js, React y Tailwind CSS. Incluye secciones de presentación, trabajos destacados, contenido y contacto para la marca.",
+    imageUrl: "",
+    link: "https://github.com/Davidespinosa8/topcinema",
+    linkLabel: "Ver código en GitHub",
+    skills: [
+      { icon: <SiNextdotjs size="30" /> },
+      { icon: <SiTailwindcss size="30" /> },
+      { icon: <SiTypescript size="30" /> },
+    ],
+  },
+  {
+    id: 8,
+    title: "Top Cinema IA",
+    description: "Proyecto web orientado a experiencias audiovisuales e inteligencia artificial, desarrollado con Next.js, React y Framer Motion.",
+    imageUrl: "",
+    link: "https://github.com/Davidespinosa8/topcinema-ia",
+    linkLabel: "Ver código en GitHub",
+    skills: [
+      { icon: <SiNextdotjs size="30" /> },
+      { icon: <SiFramer size="30" /> },
+      { icon: <SiTypescript size="30" /> },
+    ],
+  },
+  {
     id: 6,
     title: "Golden Gym",
+    linkLabel: "Ver sitio web",
     description: "Plataforma web para la gestión de un gimnasio: experiencia pública, acceso de socios, administración de rutinas y autenticación integrada con Supabase.",
     imageUrl: "",
     link: "https://goldengym.pro/",
