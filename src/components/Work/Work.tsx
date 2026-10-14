@@ -25,7 +25,7 @@ export function Work() {
         </motion.div>
 
         <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 xl:grid-cols-3">
-          {cardContent.map(({ id, title, imageUrl, link, description, skills }, index) => (
+          {cardContent.map(({ id, title, imageUrl, link, description, skills, linkLabel }, index) => (
             <motion.article
               key={id}
               initial={{ opacity: 0, y: 30 }}
@@ -42,8 +42,8 @@ export function Work() {
               >
                 {!imageUrl && (
                   <div className="flex flex-col items-center gap-3 text-center">
-                    <span className="text-5xl font-bold tracking-tight text-lime-400">GG</span>
-                    <span className="text-xl font-semibold tracking-[0.2em]">GOLDEN GYM</span>
+                    <span className="text-5xl font-bold tracking-tight text-lime-400">{title === "Golden Gym" ? "GG" : "TC"}</span>
+                    <span className="text-xl font-semibold tracking-[0.2em]">{title.toUpperCase()}</span>
                   </div>
                 )}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#151525]/70 to-transparent" />
@@ -62,7 +62,7 @@ export function Work() {
                   rel="noopener noreferrer"
                   className="inline-flex w-fit items-center gap-2 rounded-xl border border-lime-400 px-5 py-3 text-sm font-semibold text-lime-400 transition-colors hover:bg-lime-400 hover:text-[#131424] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-400"
                 >
-                  Ver sitio web <span aria-hidden="true">↗</span>
+                  {linkLabel ?? "Ver sitio web"} <span aria-hidden="true">↗</span>
                 </Link>
               </div>
             </motion.article>
