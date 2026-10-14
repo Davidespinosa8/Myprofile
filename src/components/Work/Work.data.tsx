@@ -34,6 +34,7 @@ export const cardContent = [
     description: "Plataforma web para la gestión de un gimnasio: experiencia pública, acceso de socios, administración de rutinas y autenticación integrada con Supabase.",
     imageUrl: "",
     link: "https://goldengym.pro/",
+    linkLabel: "Ver sitio web",
     skills: [
       { icon: <SiTypescript size="30" /> },
       { icon: <SiTailwindcss size="30" /> },
@@ -47,6 +48,7 @@ export const cardContent = [
       "Trabajo realizado para la familia de Vibra. En el proyecto se tomaron en cuenta las actualizaciones de next, ademas de rediseñar logos de sponsor y el uso de metodos manuales para la galeria de imagenes. Se mantiene en atualizacion constante",
     imageUrl: "/proyects/LogoHdV.png",
     link:"https://hinchadavibra.com.ar/",
+    linkLabel: "Ver sitio web",
     skills: [
       {
         icon: <SiNextdotjs size="40" />
@@ -69,6 +71,7 @@ export const cardContent = [
       "Simulacion de Landing para un banco",
     imageUrl: "/work-2.png",
     link:"https://landing-bank-six.vercel.app/",
+    linkLabel: "Ver sitio web",
     skills: [
       {
         icon: <SiNextdotjs size="40" />
@@ -88,6 +91,7 @@ export const cardContent = [
       "Barbería",
     imageUrl: "/Jbarber.png",
     link:"https://j-barber.vercel.app/",
+    linkLabel: "Ver sitio web",
     skills: [
       {
         icon: <SiNextdotjs size="40" />
@@ -107,6 +111,7 @@ export const cardContent = [
       "Menú Modal project made by HTTP, CSS and Bootstrap 5. ",
     imageUrl: "/Work-menu.png",
     link: " https://main--majestic-fox-44c86d.netlify.app/",
+    linkLabel: "Ver sitio web",
     skills: [
       
       {
@@ -127,6 +132,7 @@ export const cardContent = [
       "Menú digital",
     imageUrl: "/city.jpeg",
     link:"https://cityrock.netlify.app/",
+    linkLabel: "Ver sitio web",
     skills: [
       {
         icon: <SiCss3 size="40" />
@@ -146,6 +152,7 @@ export const cardContent = [
       "En proceso",
     imageUrl: "/work-drycraft.png",
     link:"https://drycraft-lis.vercel.app/",
+    linkLabel: "Ver sitio web",
     skills: [
       {
         icon: <SiNextdotjs size="40" />
