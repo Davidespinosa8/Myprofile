@@ -1,94 +1,75 @@
 "use client"
-import { fadeIn } from "@/utils/motionTransitions"
-import { AvatarWorks } from "../AvatarWorks/AvatarWorks"
-import { Worky } from "../Worky"
-import { motion } from 'framer-motion'
+
+import { motion } from "framer-motion"
 import { cardContent } from "./Work.data"
-import { useState } from "react"
 import Link from "next/link"
 
 export function Work() {
-    const [expandedIndex, setExpandedIndex] = useState<number | null>(null)
+  return (
+    <section className="relative min-h-screen bg-gradient-to-b from-[#191629] via-[#262044] to-[#131424] px-5 pb-32 pt-36 text-white md:px-12">
+      <div className="mx-auto max-w-7xl">
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.55 }}
+          className="mb-12 max-w-3xl"
+        >
+          <p className="mb-3 text-sm uppercase tracking-[0.3em] text-lime-400">Portfolio · Desarrollo web</p>
+          <h1 className="mb-5 text-3xl font-semibold leading-tight md:text-5xl">
+            Mis <span className="text-lime-400">proyectos</span>
+          </h1>
+          <p className="text-base leading-relaxed text-white/70 md:text-lg">
+            Una selección de sitios web y plataformas que desarrollé para marcas,
+            negocios y proyectos digitales. Explorá cada trabajo y conocé su resultado.
+          </p>
+        </motion.div>
 
-    const handleClick = (index: number) => {
-        setExpandedIndex(index === expandedIndex ? -1 : index)
-    }
-
-    const cardVariants = {
-        expanded: {
-            width: "360px",
-            opacity: 1
-        },
-        collapsed: {
-            width: "200px",
-            opacity: 0.2
-        },
-        hover: {
-            scale: 1.05
-        }
-    }
-
-    return (
-        <div className="h-screen">
-            <AvatarWorks />
-            <Worky />
-            <div className="grid pb-32 md:min-h-screen mt-28 md:mt-0 place-items-center overflow-x-auto">
-                <div>
-                    <motion.h1
-                        variants={fadeIn('left', 0.5)}
-                        initial="hidden"
-                        animate="show"
-                        exit="hidden"
-                        className="text-2xl text-center md:text-4-xl mt-10 md:mt-24 lg:mt-10 "
-                    >Mis últimos  <span className="text-lime-400">trabajos realizados.</span>
-                    </motion.h1>
-                    <motion.div
-                        className="flex flex-col items-center h-full gap-5 px-2 lg:flex-row"
-                        variants={fadeIn('up', 0.5)}
-                        initial="hidden"
-                        animate="show"
-                        exit="hidden"
-                    >
-                        {cardContent.map(({ id, title, imageUrl, link, description, skills }) => (
-                            <motion.div key={id}
-                                className={`card cursor-pointer h-[400px] bg-cover bg-no-repeat bg-center rounded-[20px] ${id === expandedIndex && 'expanded'}`}
-                                initial={{ opacity: 1 }}
-                                variants={cardVariants}
-                                animate={id === expandedIndex ? 'expanded' : 'collapsed'}
-                                whileHover="hover"
-                                exit={{
-                                    opacity: 1
-                                }}
-                                transition={{ duration: 0.5 }}
-                                onClick={() => handleClick(id)}
-                                style={{
-                                    backgroundImage: `url(/assets/${imageUrl})`
-                                }}
-                            >
-                                <div className="flex flex-col justify-end h-full">
-                                    <div className="card-footer rounded-b-[20px] bg-gray-800 bg-opacity-75 min-h-[100px] flex flex-col items-center justify-center p-3">
-                                        <h2 className="text-xl font-semibold text-center text-white">{title}</h2>
-                                        {id === expandedIndex && (
-                                            <>
-                                                <p>{description}</p>
-                                                <div className="flex gap-5 mt-3">
-                                                    {skills.map((data, index) => (
-                                                        <p key={index}>{data.icon}</p>
-                                                    ))}
-                                                </div>
-                                                {/* Enlace para abrir en nueva pestaña */}
-                                                <Link href={link} target="_blank" rel="noopener noreferrer">
-                                                    Abrir
-                                                </Link>
-                                            </>
-                                        )}
-                                    </div>
-                                </div>
-                            </motion.div>
-                        ))}
-                    </motion.div>
+        <div className="grid grid-cols-1 gap-7 sm:grid-cols-2 xl:grid-cols-3">
+          {cardContent.map(({ id, title, imageUrl, link, description, skills }, index) => (
+            <motion.article
+              key={id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.15 }}
+              transition={{ delay: Math.min(index * 0.06, 0.3), duration: 0.4 }}
+              className="group flex min-w-0 flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.06] shadow-xl transition-colors hover:border-lime-400/50"
+            >
+              <div
+                className={`relative flex h-52 items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat ${!imageUrl ? "bg-gradient-to-br from-lime-500/20 via-[#343059] to-[#141627]" : ""}`}
+                style={imageUrl ? { backgroundImage: `url(/assets/${imageUrl.replace(/^\\//, "")})` } : undefined}
+                role="img"
+                aria-label={`Vista previa de ${title}`}
+              >
+                {!imageUrl && (
+                  <div className="flex flex-col items-center gap-3 text-center">
+                    <span className="text-5xl font-bold tracking-tight text-lime-400">GG</span>
+                    <span className="text-xl font-semibold tracking-[0.2em]">GOLDEN GYM</span>
+                  </div>
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#151525]/70 to-transparent" />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <h2 className="mb-3 text-xl font-semibold">{title}</h2>
+                <p className="mb-5 flex-1 text-sm leading-relaxed text-white/70">{description}</p>
+                <div className="mb-6 flex flex-wrap items-center gap-4 text-white/75" aria-label="Tecnologías usadas">
+                  {skills.map((skill, skillIndex) => (
+                    <span key={skillIndex} className="transition-colors group-hover:text-lime-400">{skill.icon}</span>
+                  ))}
                 </div>
-            </div>
+                <Link
+                  href={link.trim()}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-fit items-center gap-2 rounded-xl border border-lime-400 px-5 py-3 text-sm font-semibold text-lime-400 transition-colors hover:bg-lime-400 hover:text-[#131424] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-400"
+                >
+                  Ver sitio web <span aria-hidden="true">↗</span>
+                </Link>
+              </div>
+            </motion.article>
+          ))}
         </div>
-    )
+        <p className="mt-10 text-sm text-white/50">Cada proyecto refleja una solución distinta; algunos sitios pueden continuar en evolución.</p>
+      </div>
+    </section>
+  )
 }
