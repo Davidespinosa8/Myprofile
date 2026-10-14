@@ -2,12 +2,24 @@ import { SiTailwindcss, SiGithub, SiNextdotjs, SiTypescript, SiBootstrap, SiCss3
 
 export const cardContent = [
   {
+    id: 6,
+    title: "Golden Gym",
+    description: "Plataforma web para la gestión de un gimnasio: experiencia pública, acceso de socios, administración de rutinas y autenticación integrada con Supabase.",
+    imageUrl: "",
+    link: "https://goldengym.pro/",
+    skills: [
+      { icon: <SiTypescript size="30" /> },
+      { icon: <SiTailwindcss size="30" /> },
+      { icon: <SiGithub size="30" /> },
+    ],
+  },
+  {
     id: 3,
     title: "Hinchada Vibra",
     description:
       "Trabajo realizado para la familia de Vibra. En el proyecto se tomaron en cuenta las actualizaciones de next, ademas de rediseñar logos de sponsor y el uso de metodos manuales para la galeria de imagenes. Se mantiene en atualizacion constante",
     imageUrl: "/proyects/LogoHdV.png",
-    link:"https://hinchadavibraoficial.vercel.app/",
+    link:"https://hinchadavibra.com.ar/",
     skills: [
       {
         icon: <SiNextdotjs size="40" />
